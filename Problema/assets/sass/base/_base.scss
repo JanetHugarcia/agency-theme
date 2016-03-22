@@ -1,0 +1,26 @@
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+$amarillo:#fec503;
+
+$kausha:'Kaushan Script', cursive;
+$droid:'Droid Serif', serif;
+$montserrat: 'Montserrat', sans-serif;
+
+@mixin fuente($valor,$color,$size){
+	font-family: $valor;
+	color:$color;
+	font-size:$size;
+}
+@mixin montserratstyle{
+	text-transform:uppercase;
+	font-weight:bold;
+	letter-spacing:3px;
+}
+h1{
+	margin:0;
+}
+body{
+	font-size:14px;
+}
