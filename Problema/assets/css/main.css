@@ -5884,6 +5884,12 @@ h1 {
   padding-left: 30%;
   padding-right: 30%; }
 
+.pdt-5 {
+  padding-top: 10px; }
+
+.mgb-50 {
+  margin-bottom: 50px; }
+
 #portfolio {
   background-color: #F7F7F7; }
   #portfolio .col-md-4 .item-port {
@@ -5937,6 +5943,8 @@ h1 {
   background-color: #222; }
   #contact .sub h2 {
     color: white; }
+  #contact .btn {
+    font-size: .8em; }
   #contact .form-cont {
     width: 100%;
     border-radius: 5px;
@@ -5957,13 +5965,43 @@ h1 {
 footer {
   padding: 10px 0px;
   font-family: "Montserrat", sans-serif; }
-  footer .icono {
-    padding: 5px; }
+  footer p, footer #hero .text-hero p span, #hero .text-hero p footer span {
+    padding-top: 10px; }
   footer .classic {
     color: #fec503;
-    margin-right: 15px; }
-  footer p, footer #hero .text-hero p span, #hero .text-hero p footer span, footer .classic {
+    margin-right: 15px;
     padding-top: 10px; }
+
+#linea {
+  position: relative; }
+  #linea:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: "";
+    width: 2px;
+    background-color: #f1f1f1;
+    left: 49%;
+    margin-left: -1.5px; }
+  #linea .img-about {
+    border-radius: 100%;
+    border: 5px solid #f4f4f4;
+    width: 140px; }
+  #linea .circle {
+    height: 140px;
+    background-color: #fec503;
+    text-align: center;
+    padding-top: 40px; }
+    #linea .circle span {
+      font-family: "Montserrat", sans-serif;
+      color: white;
+      font-size: 1.1em;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 2px;
+      width: 100%; }
+  #linea h3 {
+    margin: 0; }
 
 #hero {
   background-image: url("../../img/header-bg.jpg");
@@ -6031,6 +6069,9 @@ footer {
     #hero .navbar-default .navbar-collapse {
       background-color: #ddd; }
   #hero .text-hero p, #hero .text-hero p span {
-    font-size: 1.3em; } }
+    font-size: 1.3em; }
+
+  #linea:before {
+    left: 10px; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -97,6 +97,12 @@ h1{
 	padding-left:30%;
 	padding-right:30%;
 }
+.pdt-5{
+	padding-top:10px;
+}
+.mgb-50{
+	margin-bottom:50px;
+}
 #portfolio{
 	background-color:#F7F7F7;
 	.col-md-4{
@@ -172,6 +178,9 @@ h1{
 			color:white;
 		}
 	}
+	.btn{
+		font-size: .8em;
+	}
 	.form-cont{
 		width: 100%;
 		border-radius:5px;
@@ -192,14 +201,47 @@ h1{
 footer{
 	padding:10px 0px;
 	font-family:$montserrat;
-	.icono{
-		padding:5px;
+	p{
+		padding-top:10px;
 	}
 	.classic{
 		color:$amarillo;
 		margin-right: 15px;
-	}
-	p,.classic{
 		padding-top:10px;
+	}
+	
+}
+
+
+#linea{
+	position:relative;
+	&:before{
+		top: 0;
+	    bottom: 0;
+	    position: absolute; 
+	    content: "";
+	    width: 2px;
+	    background-color: #f1f1f1;
+	    left: 49%;
+	    margin-left: -1.5px;
+	}
+	.img-about{
+		border-radius: 100%;
+	    border: 5px solid #f4f4f4;
+	    width: 140px;
+	}
+	.circle{
+		height: 140px;
+		background-color: $amarillo;
+		text-align: center;
+		padding-top:40px;
+		span{
+			@include fuente($montserrat,white,1.1em);
+			width: 100%;
+		}
+	}
+
+	h3{
+		margin:0;
 	}
 }
