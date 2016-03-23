@@ -3,7 +3,7 @@ $(window).resize(function() {
         $('#hero').height($(window).height());
 }).resize();
 /*sticky*/
-var altura = $('hero').offset().top;
+var altura = $('header').offset().top;
 
 $(window).on('scroll', function(){
 	if ( $(window).scrollTop() > altura ){

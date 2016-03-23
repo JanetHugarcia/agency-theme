@@ -89,6 +89,10 @@ h1{
 	padding-top:30px;
 	padding-bottom:30px;
 }
+.pd-15{
+	padding-top:15px;
+	padding-bottom:15px;
+}
 .pdl{
 	padding-left:30%;
 	padding-right:30%;
@@ -116,6 +120,16 @@ h1{
 		}
 	}	
 }
+.icono{	
+	color:white;
+	background-color:#222;
+	padding-top:10px;
+	height: 35px;
+	width: 35px;
+	border-radius:100%;
+	margin-right:15px;
+
+}
 #team{
 	background-color:#F7F7F7;
 	.item-team{
@@ -123,15 +137,11 @@ h1{
 			display: inline-block;
 			width: 180px;
 			height: 180px;
-			background-color:black;
 			border-radius:100%;
 			border:3px solid white;
 			
 		}
-		.a{
-			background-image:url('../../img/team/1.jpg');
-			background-size:cover;
-		}
+		
 		.sub{
 			h2{
 				font-size: 1em;
@@ -140,16 +150,20 @@ h1{
 				font-size: 1em;
 			}
 		}
-		a{
-			color:white;
-			background-color:#222;
-			padding-top:10px;
-			height: 35px;
-			width: 35px;
-			border-radius:100%;
-			margin-right:15px;
-		}
+		
 	}
+}
+.a{
+	background-image:url('../../img/team/1.jpg');
+	background-size:cover;
+}
+.b{
+	background-image:url('../../img/team/2.jpg');
+	background-size:cover;
+}
+.c{
+	background-image:url('../../img/team/3.jpg');
+	background-size:cover;
 }
 #contact{
 	background-color:#222;
@@ -157,5 +171,35 @@ h1{
 		h2{
 			color:white;
 		}
+	}
+	.form-cont{
+		width: 100%;
+		border-radius:5px;
+		border:none;
+		@include fuente($montserrat, rgba(0,0,0,.3),.8em);
+		padding-left:10px;
+	}
+	input.form-cont{
+		height: 55px;
+	}
+	textarea.form-cont{
+		height: 190px;
+		padding-top: 10px;
+	}
+
+}
+
+footer{
+	padding:10px 0px;
+	font-family:$montserrat;
+	.icono{
+		padding:5px;
+	}
+	.classic{
+		color:$amarillo;
+		margin-right: 15px;
+	}
+	p,.classic{
+		padding-top:10px;
 	}
 }

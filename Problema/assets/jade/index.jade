@@ -86,22 +86,22 @@ include ./includes/_head.jade
           +subt('our amazing team')
         .row.text-center
           .col-md-4
-            .item-team.text-ce
+            .item-team.text-center
               .bck-img.a
               +subt('Kay Garland','Lead Designer')
               +enlace('icono fa fa-twitter','#')
               +enlace('icono fa fa-facebook','#')
               +enlace('icono fa fa-linkedin','#')
           .col-md-4
-            .item-team.text-ce
-              .bck-img.a
+            .item-team.text-center
+              .bck-img.b
               +subt('Kay Garland','Lead Designer')
               +enlace('icono fa fa-twitter','#')
               +enlace('icono fa fa-facebook','#')
               +enlace('icono fa fa-linkedin','#')
           .col-md-4
-            .item-team.text-ce
-              .bck-img.a
+            .item-team.text-center
+              .bck-img.c
               +subt('Kay Garland','Lead Designer')
               +enlace('icono fa fa-twitter','#')
               +enlace('icono fa fa-facebook','#')
@@ -127,29 +127,29 @@ include ./includes/_head.jade
         .row
           .col-md-6
             p
-              input(type="text", placeholder="YOUR NAME*")
+              input.form-cont(type="text", placeholder="YOUR NAME*")
             p
-              input(type="text", placeholder="YOUR EMAIL*")
+              input.form-cont(type="text", placeholder="YOUR EMAIL*")
             p
-              input(type="text", placeholder="YOUR PHONE*")
+              input.form-cont(type="text", placeholder="YOUR PHONE*")
           .col-md-6
-            textarea(name="", cols="30", rows="10")
-        .row
+            textarea.form-cont(name="", cols="30", rows="10" , placeholder="YOUR MESSAGE*")
+        .row.text-center.pd-30
           a.btn(href="") send a mesagge
-        
+    footer
+      .container
+        .row
+          .col-md-4.text-right
+            p Copyright © Your Website 2014
+          .col-md-4.text-center
+            .bck-img
+            +enlace('icono fa fa-twitter','#')
+            +enlace('icono fa fa-facebook','#')
+            +enlace('icono fa fa-linkedin','#')
+          .col-md-4.text-left
+            a.classic(href="#") Privacy Policy
+            a.classic(href="#") Terms of Use
 
-
-
-    // /container
-    
-    h1 hola
-    h2 hola
-    h2 hola
-    h2 hola
-    h2 hola
-    
-    
-  
 
     // Bootstrap core JavaScript
     // ==================================================
