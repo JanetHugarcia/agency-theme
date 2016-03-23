@@ -1,3 +1,4 @@
+include ./mixin/_mixin.jade
 include ./includes/_head.jade
   body
     #hero
@@ -17,14 +18,128 @@ include ./includes/_head.jade
               .navbar-collapse.collapse
                 ul.nav.navbar-nav.navbar-right
                   li
-                    a(href='../navbar/') Default
+                    a(href='#service') services
                   li
-                    a(href='../navbar-static-top/') Static top
+                    a(href='../navbar/') portfolio
                   li
-                    a(href='./') Fixed top
+                    a(href='../navbar/') about
+                  li
+                    a(href='../navbar-static-top/') team
+                  li.active
+                    a(href='./') contact
                   
               // /.nav-collapse
-  
+        .text-hero.text-center
+          .container
+            .row
+              p Welcome To Our Studio <br>
+                span it's nice to meet you
+              a.btn(href="#") tell me more
+    section#service.pd-50
+      .container
+        .row.text-center.pd-50
+          +subt('services')
+        .row
+          .col-md-4
+            +iservice('fa fa-shopping-cart fa-4x','E-Commerce')
+          .col-md-4
+            +iservice('fa fa-laptop fa-4x','E-Commerce')
+          .col-md-4
+            +iservice('fa fa-lock fa-4x','E-Commerce')
+    section#portfolio.pd-50
+      .container
+        .row.text-center.pd-50
+          +subt('portfolio')
+        .row
+          .col-md-4
+            .item-port.text-center
+              +iportfolio('img/portfolio/roundicons.png')
+              +subt('Round Icons','Graphic Design')
+          .col-md-4
+            .item-port.text-center
+              +iportfolio('img/portfolio/startup-framework.png')
+              +subt('Round Icons','Graphic Design')
+          .col-md-4
+            .item-port.text-center
+              +iportfolio('img/portfolio/treehouse.png')
+              +subt('Round Icons','Graphic Design')
+        .row
+          .col-md-4
+            .item-port.text-center
+              +iportfolio('img/portfolio/golden.png')
+              +subt('Round Icons','Graphic Design')
+          .col-md-4
+            .item-port.text-center
+              +iportfolio('img/portfolio/escape.png')
+              +subt('Round Icons','Graphic Design')
+          .col-md-4
+            .item-port.text-center
+              +iportfolio('img/portfolio/dreams.png')
+              +subt('Round Icons','Graphic Design')
+    section#about.pd-50
+      .container
+        .row.text-center.pd-50
+          +subt('about')
+    section#team.pd-50
+      .container
+        .row.text-center.pd-50
+          +subt('our amazing team')
+        .row.text-center
+          .col-md-4
+            .item-team.text-ce
+              .bck-img.a
+              +subt('Kay Garland','Lead Designer')
+              +enlace('icono fa fa-twitter','#')
+              +enlace('icono fa fa-facebook','#')
+              +enlace('icono fa fa-linkedin','#')
+          .col-md-4
+            .item-team.text-ce
+              .bck-img.a
+              +subt('Kay Garland','Lead Designer')
+              +enlace('icono fa fa-twitter','#')
+              +enlace('icono fa fa-facebook','#')
+              +enlace('icono fa fa-linkedin','#')
+          .col-md-4
+            .item-team.text-ce
+              .bck-img.a
+              +subt('Kay Garland','Lead Designer')
+              +enlace('icono fa fa-twitter','#')
+              +enlace('icono fa fa-facebook','#')
+              +enlace('icono fa fa-linkedin','#')
+        .row.text-center.pd-50.pdl
+          .bck-img
+            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, a ipsam incidunt consecte vel.
+    section#publicity.pd-30
+      .container
+        .row.text-center
+          .col-md-3
+            img(src="img/logos/envato.jpg", alt="")
+          .col-md-3
+            img(src="img/logos/designmodo.jpg", alt="")
+          .col-md-3
+            img(src="img/logos/themeforest.jpg", alt="")
+          .col-md-3
+            img(src="img/logos/creative-market.jpg", alt="")
+    section#contact.pd-50
+      .container
+        .row.text-center.pd-50
+          +subt('contact us')
+        .row
+          .col-md-6
+            p
+              input(type="text", placeholder="YOUR NAME*")
+            p
+              input(type="text", placeholder="YOUR EMAIL*")
+            p
+              input(type="text", placeholder="YOUR PHONE*")
+          .col-md-6
+            textarea(name="", cols="30", rows="10")
+        .row
+          a.btn(href="") send a mesagge
+        
+
+
+
     // /container
     
     h1 hola

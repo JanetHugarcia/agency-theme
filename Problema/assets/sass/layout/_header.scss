@@ -1,36 +1,52 @@
+#hero{
+  background-image:url('../../img/header-bg.jpg');
+  background-size:cover;
+  background-position: center;
+  position:relative;
+  @include fuente($kausha,white,1.6em);
+
+  .text-hero{
+  	padding-top:15%;
+  	p{
+	  	@include fuente($droid,white,1.8em);
+	  		span{
+			  	@extend p;
+			  	font-family:$montserrat;
+			  	text-transform: uppercase;
+		  	}
+	  }
+  }
+  h1{
+  	color:$amarillo;
+  }
+  
+  .fondo{
+		background-color: rgba(128,128,128,.4);
+		height: 100%;
+	}
+}
 .navbar-default{
 	background-color:transparent;
-	border:transparent;	
+	border:transparent;
+	padding-top:20px;	
 }
 .nav.navbar-nav.navbar-right{
+	.active{
+		a{
+			background-color:$amarillo;
+			border-radius:5px;
+		}
+	}
 	li>a{
-		@include fuente($montserrat, white,.9em);
-		@include montserratstyle;
+		@include fuente($montserrat, white,.6em);
 			&:hover{
 				color:$amarillo;
 				background-color:transparent;
 			}
 	}
-
 }
 .navbar-brand{
-	padding:10px;
-	h1{
-		@include fuente($kausha,$amarillo,1.6em);
-	}
-}
-
-
-#hero{
-  background-image:url('../../img/header-bg.jpg');
-  background-size:100% 100%;
-  position:relative;
-  color:white;
-
-  .fondo{
-		background-color: rgba(128,128,128,.4);
-		height: 100%;
-	}
+	padding:0px;
 }
 .menu-fixed{
 	position:fixed;

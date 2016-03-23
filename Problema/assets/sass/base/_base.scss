@@ -1,26 +1,161 @@
 @import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 
 $amarillo:#fec503;
+$amarillolight:rgba(254, 197, 3,.7);
 
 $kausha:'Kaushan Script', cursive;
 $droid:'Droid Serif', serif;
 $montserrat: 'Montserrat', sans-serif;
+$roboto:'Roboto Slab', serif;
+
+@mixin montserratstyle{
+	text-transform:uppercase;
+	font-weight:bold;
+	letter-spacing:2px;
+}
 
 @mixin fuente($valor,$color,$size){
 	font-family: $valor;
 	color:$color;
 	font-size:$size;
-}
-@mixin montserratstyle{
-	text-transform:uppercase;
-	font-weight:bold;
-	letter-spacing:3px;
-}
-h1{
-	margin:0;
+	@if $valor == $montserrat {
+		@include montserratstyle;
+	} 
 }
 body{
 	font-size:14px;
+	font-family:$roboto;
+	color:gray;
+}
+.sub{
+	h2{
+		@include fuente($montserrat,black,2.8em);
+	}
+	p{
+		@include fuente($droid,gray,1em);
+		font-style: italic;
+	}
+}
+.item-serv{
+	*{
+		line-height: 1.8;
+	}
+	a{
+		display: inline-block;
+		padding:20px;
+		height: 100px;
+		width: 100px;
+		color:white;
+		border-radius:100%;
+		background-color: $amarillo;
+
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	h2{
+		font-family: $montserrat;
+		font-size: 1.2em;
+		color:black;
+		font-weight: bold;
+	}
+}
+
+h1{
+	margin:0;
+}
+
+.btn{
+	display:inline-block;
+	@include fuente($montserrat,white,.6em);
+	padding:20px 35px;
+	background-color:$amarillo;
+
+		&:hover{
+			color:white;
+			background-color:$amarillolight;
+			border:1px solid white;
+			transition: all .5s;
+		}
+}
+.pd-50{
+	padding-top:50px;
+	padding-bottom:50px;
+}
+.pd-30{
+	padding-top:30px;
+	padding-bottom:30px;
+}
+.pdl{
+	padding-left:30%;
+	padding-right:30%;
+}
+#portfolio{
+	background-color:#F7F7F7;
+	.col-md-4{
+		.item-port{
+			background-color:white;
+			margin-top: 25px;
+			img{
+				width: 100%;
+			}
+			.sub{
+				padding-bottom:15px;
+				h2{
+					font-size:1em;
+					text-transform: normal;
+				}
+				p{
+					font-size:1em;
+					
+				}
+			}
+		}
+	}	
+}
+#team{
+	background-color:#F7F7F7;
+	.item-team{
+		.bck-img{
+			display: inline-block;
+			width: 180px;
+			height: 180px;
+			background-color:black;
+			border-radius:100%;
+			border:3px solid white;
+			
+		}
+		.a{
+			background-image:url('../../img/team/1.jpg');
+			background-size:cover;
+		}
+		.sub{
+			h2{
+				font-size: 1em;
+			}
+			p{
+				font-size: 1em;
+			}
+		}
+		a{
+			color:white;
+			background-color:#222;
+			padding-top:10px;
+			height: 35px;
+			width: 35px;
+			border-radius:100%;
+			margin-right:15px;
+		}
+	}
+}
+#contact{
+	background-color:#222;
+	.sub{
+		h2{
+			color:white;
+		}
+	}
 }

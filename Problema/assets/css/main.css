@@ -8,6 +8,7 @@
 @import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -224,7 +225,7 @@ th {
   img {
     max-width: 100% !important; }
 
-  p,
+  p, #hero .text-hero p span,
   h2,
   h3 {
     orphans: 3;
@@ -1227,7 +1228,7 @@ h5, .h5 {
 h6, .h6 {
   font-size: 12px; }
 
-p {
+p, #hero .text-hero p span {
   margin: 0 0 10px; }
 
 .lead {
@@ -1420,7 +1421,7 @@ blockquote {
   margin: 0 0 20px;
   font-size: 17.5px;
   border-left: 5px solid #eeeeee; }
-  blockquote p:last-child,
+  blockquote p:last-child, blockquote #hero .text-hero p span:last-child, #hero .text-hero p blockquote span:last-child,
   blockquote ul:last-child,
   blockquote ol:last-child {
     margin-bottom: 0; }
@@ -4305,7 +4306,7 @@ a.badge:hover, a.badge:focus {
   .jumbotron h1,
   .jumbotron .h1 {
     color: inherit; }
-  .jumbotron p {
+  .jumbotron p, .jumbotron #hero .text-hero p span, #hero .text-hero p .jumbotron span {
     margin-bottom: 15px;
     font-size: 21px;
     font-weight: 200; }
@@ -4365,10 +4366,10 @@ a.thumbnail.active {
     color: inherit; }
   .alert .alert-link {
     font-weight: bold; }
-  .alert > p,
+  .alert > p, #hero .text-hero p .alert > span,
   .alert > ul {
     margin-bottom: 0; }
-  .alert > p + p {
+  .alert > p + p, #hero .text-hero p .alert > span + p, #hero .text-hero p .alert > p + span, #hero .text-hero p .alert > span + span {
     margin-top: 5px; }
 
 .alert-dismissable,
@@ -5812,42 +5813,162 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+body {
+  font-size: 14px;
+  font-family: "Roboto Slab", serif;
+  color: gray; }
+
+.sub h2 {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-size: 2.8em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px; }
+.sub p, .sub #hero .text-hero p span, #hero .text-hero p .sub span {
+  font-family: "Droid Serif", serif;
+  color: gray;
+  font-size: 1em;
+  font-style: italic; }
+
+.item-serv * {
+  line-height: 1.8; }
+.item-serv a {
+  display: inline-block;
+  padding: 20px;
+  height: 100px;
+  width: 100px;
+  color: white;
+  border-radius: 100%;
+  background-color: #fec503; }
+  .item-serv a:hover {
+    text-decoration: none; }
+.item-serv h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  color: black;
+  font-weight: bold; }
+
 h1 {
   margin: 0; }
 
-body {
-  font-size: 14px; }
+.btn {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 20px 35px;
+  background-color: #fec503; }
+  .btn:hover {
+    color: white;
+    background-color: rgba(254, 197, 3, 0.7);
+    border: 1px solid white;
+    transition: all .5s; }
+
+.pd-50 {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.pd-30 {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.pdl {
+  padding-left: 30%;
+  padding-right: 30%; }
+
+#portfolio {
+  background-color: #F7F7F7; }
+  #portfolio .col-md-4 .item-port {
+    background-color: white;
+    margin-top: 25px; }
+    #portfolio .col-md-4 .item-port img {
+      width: 100%; }
+    #portfolio .col-md-4 .item-port .sub {
+      padding-bottom: 15px; }
+      #portfolio .col-md-4 .item-port .sub h2 {
+        font-size: 1em;
+        text-transform: normal; }
+      #portfolio .col-md-4 .item-port .sub p, #portfolio .col-md-4 .item-port .sub #hero .text-hero p span, #hero .text-hero p #portfolio .col-md-4 .item-port .sub span {
+        font-size: 1em; }
+
+#team {
+  background-color: #F7F7F7; }
+  #team .item-team .bck-img {
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    background-color: black;
+    border-radius: 100%;
+    border: 3px solid white; }
+  #team .item-team .a {
+    background-image: url("../../img/team/1.jpg");
+    background-size: cover; }
+  #team .item-team .sub h2 {
+    font-size: 1em; }
+  #team .item-team .sub p, #team .item-team .sub #hero .text-hero p span, #hero .text-hero p #team .item-team .sub span {
+    font-size: 1em; }
+  #team .item-team a {
+    color: white;
+    background-color: #222;
+    padding-top: 10px;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    margin-right: 15px; }
+
+#contact {
+  background-color: #222; }
+  #contact .sub h2 {
+    color: white; }
+
+#hero {
+  background-image: url("../../img/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  font-family: "Kaushan Script", cursive;
+  color: white;
+  font-size: 1.6em; }
+  #hero .text-hero {
+    padding-top: 15%; }
+    #hero .text-hero p, #hero .text-hero p span {
+      font-family: "Droid Serif", serif;
+      color: white;
+      font-size: 1.8em; }
+      #hero .text-hero p span {
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase; }
+  #hero h1 {
+    color: #fec503; }
+  #hero .fondo {
+    background-color: rgba(128, 128, 128, 0.4);
+    height: 100%; }
 
 .navbar-default {
   background-color: transparent;
-  border: transparent; }
+  border: transparent;
+  padding-top: 20px; }
 
+.nav.navbar-nav.navbar-right .active a {
+  background-color: #fec503;
+  border-radius: 5px; }
 .nav.navbar-nav.navbar-right li > a {
   font-family: "Montserrat", sans-serif;
   color: white;
-  font-size: 0.9em;
+  font-size: 0.6em;
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: 3px; }
+  letter-spacing: 2px; }
   .nav.navbar-nav.navbar-right li > a:hover {
     color: #fec503;
     background-color: transparent; }
 
 .navbar-brand {
-  padding: 10px; }
-  .navbar-brand h1 {
-    font-family: "Kaushan Script", cursive;
-    color: #fec503;
-    font-size: 1.6em; }
-
-#hero {
-  background-image: url("../../img/header-bg.jpg");
-  background-size: 100% 100%;
-  position: relative;
-  color: white; }
-  #hero .fondo {
-    background-color: rgba(128, 128, 128, 0.4);
-    height: 100%; }
+  padding: 0px; }
 
 .menu-fixed {
   position: fixed;
@@ -5859,10 +5980,16 @@ body {
   background: #3B5998; }
 
 @media screen and (max-width: 768px) {
-  .navbar-header {
-    background-color: transparent; }
-
-  .navbar-collapse {
-    background-color: #f4f4f4; } }
+  #hero h1 {
+    font-size: 1.8em;
+    padding: 8px; }
+  #hero .navbar-default {
+    padding-top: 10px; }
+    #hero .navbar-default .navbar-header {
+      background-color: transparent; }
+    #hero .navbar-default .navbar-collapse {
+      background-color: #ddd; }
+  #hero .text-hero p, #hero .text-hero p span {
+    font-size: 1.4em; } }
 
 /*# sourceMappingURL=main.css.map */
