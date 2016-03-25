@@ -1,4 +1,5 @@
 @media screen and (max-width:768px){
+	
 	#hero{
 		h1{
 			font-size: 1.5em;
@@ -9,16 +10,15 @@
 				.navbar-header{
 					background-color:transparent;
 				}
-				.navbar-collapse{
-					background-color:#ddd;
-				}
 		}
 		.text-hero{
+			padding: 150px 0px;
 		  	p{
 			  	font-size: 1.3em;
 			}
 		  	
 		}
+
 	}
 	#linea{
 		&:before{
@@ -28,4 +28,4 @@
 	
 
 }
-	
+

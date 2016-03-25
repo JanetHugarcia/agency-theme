@@ -82,8 +82,8 @@ h1{
 		}
 }
 .pd-50{
-	padding-top:50px;
-	padding-bottom:50px;
+	padding-top:80px;
+	padding-bottom:80px;
 }
 .pd-30{
 	padding-top:30px;
@@ -101,7 +101,7 @@ h1{
 	padding-top:10px;
 }
 .mgb-50{
-	margin-bottom:50px;
+	margin-bottom:80px;
 }
 #portfolio{
 	background-color:#F7F7F7;
@@ -222,19 +222,20 @@ footer{
 	    content: "";
 	    width: 2px;
 	    background-color: #f1f1f1;
-	    left: 49%;
+	    left: 50%;
 	    margin-left: -1.5px;
 	}
 	.img-about{
 		border-radius: 100%;
 	    border: 5px solid #f4f4f4;
-	    width: 140px;
+	    width: 100%;
 	}
 	.circle{
-		height: 140px;
+		height: 165px;
+		width: 165px;
 		background-color: $amarillo;
 		text-align: center;
-		padding-top:40px;
+		padding-top:50px;
 		span{
 			@include fuente($montserrat,white,1.1em);
 			width: 100%;
