@@ -2,10 +2,10 @@
 mixin subt(h,p)
 	.sub
 		h2=h
-		if p==true
-			p=p 
-		else 
+		if p==0
 			p Lorem ipsum dolor sit amet consectetur.
+		else 
+			p=p
 
 mixin enlace(clase,direcc)
 	a(class=clase,href=direcc)
@@ -18,7 +18,7 @@ mixin iservice(clase,h)
 		p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
 
 mixin iportfolio(link)
-	.bck-img
+	a.bck-img(href="#")
 		.img
 			img(src=link)
 		

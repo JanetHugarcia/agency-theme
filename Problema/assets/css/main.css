@@ -5895,13 +5895,21 @@ h1 {
   #portfolio .col-md-4 .item-port {
     background-color: white;
     margin-top: 25px; }
-    #portfolio .col-md-4 .item-port img {
-      width: 100%; }
+    #portfolio .col-md-4 .item-port .bck-img {
+      overflow: hidden; }
+      #portfolio .col-md-4 .item-port .bck-img .img {
+        background-color: rgba(254, 197, 3, 0.7); }
+        #portfolio .col-md-4 .item-port .bck-img .img img {
+          width: 100%; }
+      #portfolio .col-md-4 .item-port .bck-img:hover img {
+        opacity: 0.3;
+        transform: scale(1.1); }
     #portfolio .col-md-4 .item-port .sub {
       padding-bottom: 15px; }
       #portfolio .col-md-4 .item-port .sub h2 {
         font-size: 1em;
-        text-transform: normal; }
+        text-transform: capitalize;
+        letter-spacing: 1px; }
       #portfolio .col-md-4 .item-port .sub p, #portfolio .col-md-4 .item-port .sub #hero .text-hero p span, #hero .text-hero p #portfolio .col-md-4 .item-port .sub span {
         font-size: 1em; }
 
@@ -5913,6 +5921,10 @@ h1 {
   width: 35px;
   border-radius: 100%;
   margin-right: 15px; }
+  .icono:hover {
+    background-color: rgba(254, 197, 3, 0.7);
+    text-decoration: none;
+    color: white; }
 
 #team {
   background-color: #F7F7F7; }
@@ -5923,7 +5935,9 @@ h1 {
     border-radius: 100%;
     border: 3px solid white; }
   #team .item-team .sub h2 {
-    font-size: 1em; }
+    font-size: 1em;
+    text-transform: capitalize;
+    letter-spacing: 1px; }
   #team .item-team .sub p, #team .item-team .sub #hero .text-hero p span, #hero .text-hero p #team .item-team .sub span {
     font-size: 1em; }
 
@@ -5962,16 +5976,6 @@ h1 {
     height: 190px;
     padding-top: 10px; }
 
-footer {
-  padding: 10px 0px;
-  font-family: "Montserrat", sans-serif; }
-  footer p, footer #hero .text-hero p span, #hero .text-hero p footer span {
-    padding-top: 10px; }
-  footer .classic {
-    color: #fec503;
-    margin-right: 15px;
-    padding-top: 10px; }
-
 #linea {
   position: relative; }
   #linea:before {
@@ -6003,6 +6007,16 @@ footer {
       width: 100%; }
   #linea h3 {
     margin: 0; }
+
+footer {
+  padding: 10px 0px;
+  font-family: "Montserrat", sans-serif; }
+  footer p, footer #hero .text-hero p span, #hero .text-hero p footer span {
+    padding-top: 10px; }
+  footer .classic {
+    color: #fec503;
+    margin-right: 15px;
+    padding-top: 10px; }
 
 #hero {
   background-image: url("../../img/header-bg.jpg");
@@ -6067,7 +6081,13 @@ footer {
     #hero .text-hero p, #hero .text-hero p span {
       font-size: 1.3em; }
 
+  .navbar-default .navbar-collapse {
+    background-color: black; }
+
   #linea:before {
-    left: 10px; } }
+    left: 10px; }
+
+  .item-team {
+    padding: 30px 0px; } }
 
 /*# sourceMappingURL=main.css.map */

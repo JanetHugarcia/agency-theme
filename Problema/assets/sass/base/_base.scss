@@ -1,30 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif);
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
-
-$amarillo:#fec503;
-$amarillolight:rgba(254, 197, 3,.7);
-
-$kausha:'Kaushan Script', cursive;
-$droid:'Droid Serif', serif;
-$montserrat: 'Montserrat', sans-serif;
-$roboto:'Roboto Slab', serif;
-
-@mixin montserratstyle{
-	text-transform:uppercase;
-	font-weight:bold;
-	letter-spacing:2px;
-}
-
-@mixin fuente($valor,$color,$size){
-	font-family: $valor;
-	color:$color;
-	font-size:$size;
-	@if $valor == $montserrat {
-		@include montserratstyle;
-	} 
-}
 body{
 	font-size:14px;
 	font-family:$roboto;
@@ -74,12 +47,12 @@ h1{
 	padding:20px 35px;
 	background-color:$amarillo;
 
-		&:hover{
-			color:white;
-			background-color:$amarillolight;
-			border:1px solid white;
-			transition: all .5s;
-		}
+	&:hover{
+		color:white;
+		background-color:$amarillolight;
+		border:1px solid white;
+		transition: all .5s;
+	}
 }
 .pd-50{
 	padding-top:80px;
@@ -109,14 +82,30 @@ h1{
 		.item-port{
 			background-color:white;
 			margin-top: 25px;
-			img{
-				width: 100%;
+			.bck-img{
+				overflow: hidden;
+				.img{
+					background-color:$amarillolight;
+					img{
+						width: 100%;
+					}
+				}
+				
+				&:hover{
+					img{
+						opacity: 0.3;
+						transform: scale(1.1);
+					}
+					
+				}
 			}
+			
 			.sub{
 				padding-bottom:15px;
 				h2{
 					font-size:1em;
-					text-transform: normal;
+					text-transform: capitalize;
+					letter-spacing: 1px;
 				}
 				p{
 					font-size:1em;
@@ -134,8 +123,13 @@ h1{
 	width: 35px;
 	border-radius:100%;
 	margin-right:15px;
-
+	&:hover{
+		background-color:$amarillolight;
+		text-decoration: none;
+		color:white;
+	}
 }
+
 #team{
 	background-color:#F7F7F7;
 	.item-team{
@@ -151,14 +145,16 @@ h1{
 		.sub{
 			h2{
 				font-size: 1em;
+				text-transform: capitalize;
+				letter-spacing: 1px;
 			}
 			p{
 				font-size: 1em;
 			}
 		}
-		
 	}
 }
+		
 .a{
 	background-image:url('../../img/team/1.jpg');
 	background-size:cover;
@@ -198,20 +194,6 @@ h1{
 
 }
 
-footer{
-	padding:10px 0px;
-	font-family:$montserrat;
-	p{
-		padding-top:10px;
-	}
-	.classic{
-		color:$amarillo;
-		margin-right: 15px;
-		padding-top:10px;
-	}
-	
-}
-
 
 #linea{
 	position:relative;
@@ -245,4 +227,19 @@ footer{
 	h3{
 		margin:0;
 	}
+}
+
+
+footer{
+	padding:10px 0px;
+	font-family:$montserrat;
+	p{
+		padding-top:10px;
+	}
+	.classic{
+		color:$amarillo;
+		margin-right: 15px;
+		padding-top:10px;
+	}
+	
 }

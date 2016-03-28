@@ -20,12 +20,17 @@
 		}
 
 	}
+	.navbar-default .navbar-collapse{
+		background-color:black;
+	}
 	#linea{
 		&:before{
 		    left: 10px;
 		}
 	}
 	
-
+	.item-team{
+		padding:30px 0px;
+	}
 }
 

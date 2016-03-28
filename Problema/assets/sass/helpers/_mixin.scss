@@ -1,0 +1,14 @@
+@mixin montserratstyle{
+	text-transform:uppercase;
+	font-weight:bold;
+	letter-spacing:2px;
+}
+
+@mixin fuente($valor,$color,$size){
+	font-family: $valor;
+	color:$color;
+	font-size:$size;
+	@if $valor == $montserrat {
+		@include montserratstyle;
+	} 
+}
