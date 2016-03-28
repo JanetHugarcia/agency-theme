@@ -5895,15 +5895,14 @@ h1 {
   #portfolio .col-md-4 .item-port {
     background-color: white;
     margin-top: 25px; }
-    #portfolio .col-md-4 .item-port .bck-img {
-      overflow: hidden; }
-      #portfolio .col-md-4 .item-port .bck-img .img {
-        background-color: rgba(254, 197, 3, 0.7); }
-        #portfolio .col-md-4 .item-port .bck-img .img img {
-          width: 100%; }
-      #portfolio .col-md-4 .item-port .bck-img:hover img {
-        opacity: 0.3;
-        transform: scale(1.1); }
+    #portfolio .col-md-4 .item-port .bck-img .img {
+      overflow: hidden;
+      background-color: rgba(254, 197, 3, 0.7); }
+      #portfolio .col-md-4 .item-port .bck-img .img img {
+        width: 100%; }
+    #portfolio .col-md-4 .item-port .bck-img:hover img {
+      opacity: 0.3;
+      transform: scale(1.1); }
     #portfolio .col-md-4 .item-port .sub {
       padding-bottom: 15px; }
       #portfolio .col-md-4 .item-port .sub h2 {
