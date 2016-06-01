@@ -1,0 +1,57 @@
+#hero{
+  background-image:url('../../img/header-bg.jpg');
+  background-size:cover;
+  background-position: center;
+  position:relative;
+  @include fuente($kausha,white,1.6em);
+
+  .text-hero{
+  	padding-top:15%;
+  	p{
+	  	@include fuente($droid,white,1.8em);
+	  		span{
+			  	@extend p;
+			  	font-family:$montserrat;
+			  	text-transform: uppercase;
+		  	}
+	  }
+  }
+  h1{
+  	color:$amarillo;
+  }
+  
+  .fondo{
+		background-color: rgba(128,128,128,.1);
+		height: 100%;
+	}
+}
+.navbar-default{
+	background-color:transparent;
+	border:transparent;
+	padding-top:20px;
+	margin-bottom: 5px;
+}
+
+.nav.navbar-nav.navbar-right{
+	.active{
+		a{
+			background-color:$amarillo;
+			border-radius:5px;
+		}
+	}
+	li>a{
+		@include fuente($montserrat, white,.6em);
+			&:hover{
+				color:$amarillo;
+				background-color:transparent;
+			}
+	}
+}
+.navbar-brand{
+	padding:0px;
+}
+
+.navbar-shrink {
+    background-color: #222222;
+    padding: 10px 0;
+}
