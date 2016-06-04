@@ -3787,7 +3787,7 @@ tbody.collapse.in {
 
 .navbar-brand {
   float: left;
-  padding: 15px 15px;
+  padding: 0;
   font-size: 18px;
   line-height: 20px;
   height: 50px; }
@@ -6061,9 +6061,6 @@ footer {
     color: #fec503;
     background-color: transparent; }
 
-.navbar-brand {
-  padding: 0px; }
-
 .navbar-shrink {
   background-color: #222222;
   padding: 10px 0; }
@@ -6076,6 +6073,8 @@ footer {
     padding-top: 10px; }
     #hero .navbar-default .navbar-header {
       background-color: transparent; }
+    #hero .navbar-default .navbar-brand {
+      padding-left: 15px; }
   #hero .text-hero {
     padding: 150px 0px; }
     #hero .text-hero p, #hero .text-hero p span {

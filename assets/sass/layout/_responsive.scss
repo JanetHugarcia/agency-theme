@@ -10,6 +10,9 @@
 				.navbar-header{
 					background-color:transparent;
 				}
+				.navbar-brand{
+					padding-left:15px;
+				}
 		}
 		.text-hero{
 			padding: 150px 0px;
@@ -23,6 +26,7 @@
 	.navbar-default .navbar-collapse{
 		background-color:black;
 	}
+
 	#linea{
 		&:before{
 		    left: 10px;
